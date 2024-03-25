@@ -2,11 +2,11 @@ import numpy as np
 import torch
 import random
 import logging
-from eg_mcts.arg.parse_args import args
-from eg_mcts.model.eg_network import EG_MLP
-from eg_mcts.model.train_data_loader import ValueDataLoader
-from eg_mcts.model.train_method import Trainer
-from eg_mcts.utils import setup_logger
+from dreamretroer.arg.parse_args import args
+from dreamretroer.model.eg_network import EG_MLP
+from dreamretroer.model.train_data_loader import ValueDataLoader
+from dreamretroer.model.train_method import Trainer
+from dreamretroer.utils import setup_logger
 
 def train():
     device = torch.device('cuda' if args.gpu >= 0 else 'cpu')
