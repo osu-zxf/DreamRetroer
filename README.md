@@ -38,7 +38,7 @@ Download the building block set, pretrained one-step retrosynthetic model, react
 
 After downloading the files, 
 - Put **origin_dict.csv** under the src/dreamretroer/dataset directory,
-- Put **retro_star_value_ours.ckpt**, **template_rules_1.dat** under the src/dreamretroer/one_step_model directory.
+- Put **retro_star_value.ckpt**, **template_rules.dat** under the src/dreamretroer/one_step_model directory.
  
 
 ### Step 3. Install rdchiral and template selection lib
