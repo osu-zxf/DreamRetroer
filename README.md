@@ -24,20 +24,37 @@ conda env create -f src/environment.yml
 conda activate dream_retro
 ```
 
+(Optional) If you found install from file slow, maybe you can install them step by step.
+```
+conda create -n dream_retro2 python=3.7
+conda activate dream_retro2
+conda install pandas networkx graphviz python-graphviz tqdm
+conda install rdkit -c rdkit
+conda install pytorch torchvision cpuonly -c pytorch
+```
+
 ### Step 2. Download the data
 Download the building block set, pretrained one-step retrosynthetic model, reaction templates library extracted from USPTO, retrosynthetic tasks and solutions from [link](https://drive.google.com/drive/folders/1nXAuiBzb5YqcIJ5zeP0IoJFt0F5s7Flp?usp=drive_link).
 
+After downloading the files, 
+- Put **origin_dict.csv** under the src/dreamretroer/dataset directory,
+- Put **retro_star_value_ours.ckpt**, **template_rules_1.dat** under the src/dreamretroer/one_step_model directory.
+ 
+
 ### Step 3. Install rdchiral and template selection lib
 ```
-pip install -e src/retroer/packages/mlp_retrosyn
-pip install -e src/retroer/packages/rdchiral
+pip install -e src/packages/mlp_retrosyn
+pip install -e src/packages/rdchiral
+
+pip install -e src/
 ```
 
 ### Step 4. Run retrosynthetic planning
 To solve retrosynthetic task, run the following command to run an example,
 
 ```
-python retro_plan.py
+cd src/
+python api.py
 ```
 
 For further details, see Online Methods of our paper. 
