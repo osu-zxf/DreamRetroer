@@ -34,7 +34,7 @@ conda install pytorch torchvision cpuonly -c pytorch
 ```
 
 ### Step 2. Download the data
-Download the building block set, pretrained one-step retrosynthetic model, reaction templates library extracted from USPTO, retrosynthetic tasks and solutions from [link](https://drive.google.com/drive/folders/1nXAuiBzb5YqcIJ5zeP0IoJFt0F5s7Flp?usp=drive_link).
+Download the building block set, pretrained one-step retrosynthetic model, reaction templates library extracted from USPTO, retrosynthetic tasks and solutions from [link](https://drive.google.com/drive/folders/1nXAuiBzb5YqcIJ5zeP0IoJFt0F5s7Flp?usp=sharing).
 
 After downloading the files, 
 - Put **origin_dict.csv** under the src/dreamretroer/dataset directory,
