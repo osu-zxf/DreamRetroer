@@ -13,10 +13,10 @@ parser.add_argument('--seed', type=int, default=1234)
 
 # ================== one-step model ================ #
 parser.add_argument('--mlp_model_dump',
-                    default='dreamretroer/one_step_model/retro_star_value_ours.ckpt')
+                    default='dreamretroer/one_step_model/retro_star_value.ckpt')
 
 parser.add_argument('--mlp_templates',
-                    default='dreamretroer/one_step_model/template_rules_1.dat')
+                    default='dreamretroer/one_step_model/template_rules.dat')
 # ================================================== #
 # search algs
 parser.add_argument('--iterations', type=int, default=500)
