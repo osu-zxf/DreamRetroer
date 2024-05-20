@@ -16,7 +16,12 @@ Our system can be divided into three phases that alternate continuously. In the 
 <img src="figs/DreamerFramework.png" > 
 </p>
 
+## System Requirements
+### OS Requirements
+This package is supported for Linux. The package has been tested on the following system:
+Linux: Ubuntu 20.04
 
+## Installation Guide
 ### Step 1. Setup the environment
 We recommend to create a conda virtual environment
 ```
@@ -58,3 +63,6 @@ python api.py
 ```
 
 For further details, see Online Methods of our paper. 
+
+## License
+This project is covered under the Apache 2.0 License.
